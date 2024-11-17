@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'event',
     'rest_framework',
+    'rest_framework.authtoken',
     'django_filters',
+    'permission',
 ]
 
 MIDDLEWARE = [
@@ -133,8 +135,8 @@ REST_FRAMEWORK = {
     'PAGE_SIZE' :10,
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.BasicAuthentication',
-        # 'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
     ]
 }
 
-# AUTH_USER_MODEL = 'permission.User'
+AUTH_USER_MODEL = 'permission.User'
