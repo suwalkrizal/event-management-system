@@ -1,43 +1,22 @@
-to setup django for event management system
+# Event management system
+## Installation
 
-python -m venv env.(to create an environment)
+### Install Dependencies
+- pip install -r requirements.txt
 
-.gitignore (gitignore.io)
+### Apply migrations
+- python manage.py migrate
 
-git init(to connect in github)
+### Create superuser
+- python manage.py createsuperuser
 
-git add .(add all the program in git )
+### Run development server
+- python manage.py runserver
 
-git commit  -m "initial project"
+## API Documentation
+- Swagger UI: http://localhost:800/swagger/
 
-git branch -M main
+## Note:
+- Use .env file for project configuration.
+- Read .env.example on what and how .env file should be created.
 
-git push -u origin main(it push all the project that you have add)
-
-virtual environment
-->  .\env\Scripts\activate (it activate the virtual environment)
-
-pip install django
-
-django-admin startproject  project .
-
-python manage.py runsever
-
-dotenv python
--> pip install python-dotenv
-
-
-create   .env (this for security purpose)
-
-
-python manage.py startapp app
-
-pip install mysqlcilent (for database )
-
-pip install djangorestframework (this is for API, authentication and permission)
-
-pip install django-filter
-
-pip install markdown
-
-python manage.py createsuperuser (it is to create an account as username and password)
